@@ -104,19 +104,41 @@
 //     (year % 4 == 0) ? printf("%d is Leapyear",year) : printf("%d is not Leapyaer",year);
 //     return 0;
 // }
-#include<stdio.h>
+// #include<stdio.h>
+// int main()
+// {
+//     char ch;
+//     printf("Enter a character from the Keyboard = ");
+//     scanf("%c",&ch);
+//     if(ch>=65 && ch<=90)
+//         printf("The character is an uppercase letter\n");
+//     if(ch>=97 && ch<=122)
+//         printf("The character is lowercase letter\n");
+//     if(ch>=48 && ch<=57)
+//         printf("The character is digit\n");
+//     if((ch>=0 && ch<48) || (ch>57 && ch<65) || (ch>90 && ch<97) || ch>122)
+//         printf("The character is a special symbol\n");
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 20, y = 40, z = 45;
+//     if (x > y && x > z)
+//         printf("biggest = %d\n", x);
+//     else if (y > x && y > z)
+//         printf("biggest = %d\n", y);
+//     else if (z > x && z > y)
+//         printf("biggest = %d\n", z);
+
+//     return 0;
+// }
+#include <stdio.h>
 int main()
 {
-    char ch;
-    printf("Enter a character from the Keyboard = ");
-    scanf("%c",&ch);
-    if(ch>=65 && ch<=90)
-        printf("The character is an uppercase letter\n");
-    if(ch>=97 && ch<=122)
-        printf("The character is lowercase letter\n");
-    if(ch>=48 && ch<=57)
-        printf("The character is digit\n");
-    if((ch>=0 && ch<48) || (ch>57 && ch<65) || (ch>90 && ch<97) || ch>122)
-        printf("The character is a special symbol\n");
+    int i = -1, j = 1, k, l;
+    k = !i && j;
+    l = !i || j;
+    printf("%d %d\n", i, j);
     return 0;
 }
