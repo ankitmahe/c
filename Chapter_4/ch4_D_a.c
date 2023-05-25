@@ -1,25 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int a, b, c;
-    printf("Enter three sides of Triangle = ");
-    scanf("%d %d %d", &a, &b, &c);
-    if (a == b && b == c)
+    int year;
+    printf("Enter a Year = ");
+    scanf("%d",&year);
+    if((year%4==0) || (year%400==0) && (year%100!=0))
     {
-        printf("Triangle is equilateral");
+        printf("Leapyear");
     }
-    else if (a == b || b == c || c == a)
+    else
     {
-        printf("Triangle is isosceles");
-    }
-
-    else if (a != b && b != c && c != a)
-    {
-        printf("Triangle is scalene");
-    }
-    if ((a * a) + (b * b) == (c * c) || (b * b) + (c * c) == (a * a) || (a * a) + (c * c) == (b * b))
-    {
-        printf("\nthe triangle is right angle Triangle");
+        printf("Not Leapyear");
     }
     return 0;
 }

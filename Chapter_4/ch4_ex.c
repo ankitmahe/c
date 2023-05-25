@@ -133,12 +133,60 @@
 
 //     return 0;
 // }
-#include <stdio.h>
+// #include <stdio.h>
+// int main()
+// {
+//     int i = -1, j = 1, k, l;
+//     k = !i && j;
+//     l = !i || j;
+//     printf("%d %d\n", i, j);
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int i = 10, j = 20;
+//     if ((i = 5) && (j = 10))
+//         printf("Have a nice day\n");
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 10, y = 20;
+//     if (x >= 2 && y <= 50)
+//         printf("%d\n", x);
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 2;
+//     if (x == 2 && x != 0)
+//     printf("Hello\n");
+//     else printf("Bye\n");
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int i = 10, j = 10;
+//     if (i && j == 10)
+//         printf("Have a nice day\n");
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int j = 65;
+//     printf("j >= 65 ? %d : %c\n", j);
+//     return 0;
+// }
+# include <stdio.h>
 int main()
 {
-    int i = -1, j = 1, k, l;
-    k = !i && j;
-    l = !i || j;
+    int i = 10, j;
+    if((i >= 5 )?( j = 10 ):( j = 15))
     printf("%d %d\n", i, j);
     return 0;
 }
