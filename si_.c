@@ -9,7 +9,6 @@ int main()
     printf("Enter a Time = ");
     scanf("%d",&t);
     si=p*r*t/100;
-    
     printf("Simple Interset of = %d ",si);
     return 0;
 }
