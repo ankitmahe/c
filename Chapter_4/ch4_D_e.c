@@ -12,7 +12,11 @@ int main()
     {
         printf("The triangle is an isosceles triangle.\n");
     }
-    else if (s1 * s1 + s2 * s2 == s3 * s3 ||
+    else
+    {
+        printf("The triangle is a scalene triangle.\n");
+    }
+    if (s1 * s1 + s2 * s2 == s3 * s3 ||
              s2 * s2 + s3 * s3 == s1 * s1 ||
              s3 * s3 + s1 * s1 == s2 * s2)
     {
@@ -20,7 +24,8 @@ int main()
     }
     else
     {
-        printf("The triangle is a scalene triangle.\n");
+        printf("Not a right angle triangle.");
     }
+    
 return 0;
 }
