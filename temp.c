@@ -31,14 +31,41 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// int main()
+// {
+//     float i=1.0;
+//     while(i<=2.0)
+//     {
+//         printf("%f\n",i);
+//         i = i + 0.1;
+//         }
+//     return 0;
+// }
+
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    float i=1.0;
-    while(i<=2.0)
+    int n,rev=0,i=4,r,count=0;
+    printf("Enter the Number : ");
+    scanf("%d",&n);
+    int temp;
+    temp=n;
+    while(temp>0)
     {
-        printf("%f\n",i);
-        i = i + 0.1;
-        }
+        temp = temp/10;
+        count++;
+    }
+    // printf("%d",count);
+    count=count-1;
+    while (n>0)
+    {
+        r=n%10;
+        n=n/10;
+        rev=rev+r*pow(10,count);
+        count--;
+    }
+    printf("%d",rev);
     return 0;
 }
