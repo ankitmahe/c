@@ -43,29 +43,77 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// #include<math.h>
+// int main()
+// {
+//     int n,rev=0,i=4,r,count=0;
+//     printf("Enter the Number : ");
+//     scanf("%d",&n);
+//     int temp;
+//     temp=n;
+//     while(temp>0)
+//     {
+//         temp = temp/10;
+//         count++;
+//     }
+//     // printf("%d",count);
+//     count=count-1;
+//     while (n>0)
+//     {
+//         r=n%10;
+//         n=n/10;
+//         rev=rev+r*pow(10,count);
+//         count--;
+//     }
+//     printf("%d",rev);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int smallest,biggest,n,range,i=1,num;
+//     printf("Enter the Range of enter the Nmber : ");
+//     scanf("%d",&n);
+//     printf("Enter the number : ");
+//     scanf("%d",&num);
+//     smallest=num;
+//     biggest=num;
+//     i++;
+//     while(n>1)
+//     {
+//         printf("Enter the Number %d =: ",i);
+//         scanf("%d",&num);
+//         if(num<smallest)
+//         {
+//             smallest=num;
+//         }
+//         if(num>biggest)
+//         {
+//             biggest=num;
+//         }
+//         i++;
+//         n--;
+//     }
+//     printf("Biggest Number is %d\n",biggest);
+//     printf("Smallest Number is %d\n",smallest);
+//     range=biggest-smallest;
+//     printf("Range is different between the smallest and biggest number is %d",range);
+//     return 0;
+// }
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int n,rev=0,i=4,r,count=0;
+    int octal=0,n,r,i=0,temp;
     printf("Enter the Number : ");
     scanf("%d",&n);
-    int temp;
-    temp=n;
-    while(temp>0)
-    {
-        temp = temp/10;
-        count++;
-    }
-    // printf("%d",count);
-    count=count-1;
     while (n>0)
     {
-        r=n%10;
-        n=n/10;
-        rev=rev+r*pow(10,count);
-        count--;
+        r=n%8;
+        r=n/8;
+        
     }
-    printf("%d",rev);
+    
     return 0;
 }

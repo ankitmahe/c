@@ -1,4 +1,16 @@
-#include<stdio.h>
+#incluprintf("Enter the Number %d : ",i);
+        scanf("%d",&num);
+        if(num<smallest)
+        {
+            smallest=num;
+        }
+        if(num>biggest)
+        {
+            biggest=num;
+        }
+        i++;
+        n--;
+    }de<stdio.h>
 int main()
 {
     int smallest,biggest,n,range,i=1,num;
@@ -11,19 +23,7 @@ int main()
     i++;
     while(n>1)
     {
-        printf("Enter the Number %d : ",i);
-        scanf("%d",&num);
-        if(num<smallest)
-        {
-            smallest=num;
-        }
-        if(num>biggest)
-        {
-            biggest=num;
-        }
-        i++;
-        n--;
-    }
+        
     printf("Smallest number = %d\n",smallest);
     printf("Biggest number = %d\n",biggest);
     printf("Range of small to big = %d",biggest-smallest-1);
