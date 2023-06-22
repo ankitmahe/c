@@ -103,6 +103,7 @@
 //     return 0;
 // }
 #include<stdio.h>
+#include<math.h>
 int main()
 {
     int octal=0,n,r,i=0,temp;
@@ -111,9 +112,10 @@ int main()
     while (n>0)
     {
         r=n%8;
-        r=n/8;
-        
+        n=n/8;
+        octal=octal+r*pow(10,i);
+        i++;
     }
-    
+    printf("%d",octal);   
     return 0;
 }
