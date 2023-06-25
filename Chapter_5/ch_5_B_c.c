@@ -11,7 +11,7 @@ int main()
             printf("Please enter number between 1 to 4");
             break;
         }
-            n=n-user;
+        n=n-user;
         printf("Matchstick left %d \n",n);
         cu=5-user;
         printf("Computer picked = %d\n",cu);
