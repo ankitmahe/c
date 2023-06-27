@@ -154,40 +154,40 @@
 
 //     return 0;
 // }
-#include<stdio.h>
-int main()
-{
-    int i,j,k=0,rows;
-    printf("Enter the number of rows = ");
-    scanf("%d",&rows);
-    for(i=1;i<=rows;i++)
-    {
-        for(j=1;j<=rows-i;j++)
-        {
-            printf(" ");
-        }
-        for(k=1;k<=(i*2-1);k++)
-        {
-            printf("*");
-        }
-        printf("\n");
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j,k=0,rows;
+//     printf("Enter the number of rows = ");
+//     scanf("%d",&rows);
+//     for(i=1;i<=rows;i++)
+//     {
+//         for(j=1;j<=rows-i;j++)
+//         {
+//             printf(" ");
+//         }
+//         for(k=1;k<=(i*2-1);k++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
         
-    }
-    for(i=1;i<=rows;i++)
-        {
-            for ( j = 1; j <= (rows*2-1);j++)
-            {
-                if(i>=3 && i<=5 && j>=5 && j<=9)
-                {
-                    printf(" ");
-                    continue;
-                }
-                printf("*");
-            }
-            printf("\n");    
-        }
-    return 0;
-}
+//     }
+//     for(i=1;i<=rows;i++)
+//         {
+//             for ( j = 1; j <= (rows*2-1);j++)
+//             {
+//                 if(i>=3 && i<=5 && j>=5 && j<=9)
+//                 {
+//                     printf(" ");
+//                     continue;
+//                 }
+//                 printf("*");
+//             }
+//             printf("\n");    
+//         }
+//     return 0;
+// }
 // #include<stdio.h>
 // int main()
 // {
@@ -248,26 +248,29 @@ int main()
 //     }
 //     return 0;
 // }
-// #include<stdio.h>
-// int main()
-// {
-//   int n;
+#include<stdio.h>
+int main()
+{
+  int n,k,i,j,l;
 
-//   printf("Enter number of rows: ");
-//   scanf("%d",&n);
-
-//   for(int i=1; i <= n; i++)
-//   {
-//     for(int j=1; j <= 2*n; j++)
-//     {
-//         if(j <= i || j > (2*n-i) ) 
-//         printf("*"); // star
-//         else 
-//         printf(" "); // space
-//     }
-
-//     printf("\n"); // new line
-//   }
-
-//   return 0;
-// }
+  printf("Enter number of rows: ");
+  scanf("%d",&n);
+  for(i=1; i <= n; i++)
+  {
+    for(j=1; j <=i; j++)
+    {
+      printf("*");
+    }
+    for(k=n*2-i*2;k>1;k--)
+      {
+        printf(" ");
+      }
+    for(l=1;l<=i;l++)
+    {
+      if(l>=1 && l<n)
+      printf("*");
+    }
+  printf("\n");
+  }
+  return 0;
+}
