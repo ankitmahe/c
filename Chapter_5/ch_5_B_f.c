@@ -1,4 +1,7 @@
-#incluprintf("Enter the Number %d : ",i);
+#include<stdio.h>
+int main()
+{
+        printf("Enter the Number %d : ",i);
         scanf("%d",&num);
         if(num<smallest)
         {
@@ -10,8 +13,7 @@
         }
         i++;
         n--;
-    }de<stdio.h>
-int main()
+    }
 {
     int smallest,biggest,n,range,i=1,num;
     printf("Enter the range how many numbers you wnat to enter : ");

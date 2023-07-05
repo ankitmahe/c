@@ -6,9 +6,10 @@ last decade.*/
 int main()
 {
     int population = 100000;
-    for(int i=1;i<=10;i++)
+    for(int i=1;i<10;i++)
     {
-
+        population = (population*100)/(100+10);
+        printf("The total population of year %dth : %d\n",10-i,population);
     }
     return 0;
 }
