@@ -20,17 +20,17 @@
 
 #include <stdio.h>
 int main() {
-   int coef = 1, k, i, j;
+   int temp = 1, k, i, j;
    for (i = 0; i < 5; i++) 
    {
       for (j = 1; j <= 5 - i; j++)
          printf("  ");
       for (k = 0; k <= i; k++) {
          if (k == 0 || i == 0)
-            coef = 1;
+            temp = 1;
          else
-            coef = coef * (i - k + 1) / k;
-         printf("%4d", coef);
+            temp = temp * (i - k + 1) / k;
+         printf("%4d", temp);
       }
       printf("\n");
    }
